@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hakkında
-permalink: /hakkinda/
+permalink: /about/
 ---
 
 # Hakkımda
