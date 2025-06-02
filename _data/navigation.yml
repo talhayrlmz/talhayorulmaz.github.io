@@ -1,3 +1,5 @@
-main:
-- title: "Hakkında"
-    url: /about/
+- title: Anasayfa
+  url: /
+
+- title: Hakkında
+  url: /hakkinda/
