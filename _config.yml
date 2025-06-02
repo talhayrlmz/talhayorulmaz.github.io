@@ -5,10 +5,9 @@ github_username: talhayrlmz
 url: "https://talhayorulmaz.com"
 
 
-highlighter: rouge
+
 
 header_pages:
   - index.md
   - about.md
 
-font-size: small
