@@ -4,6 +4,13 @@ theme: minima
 github_username: talhayrlmz
 url: "https://talhayorulmaz.com"
 
+sass:
+  style: compressed
+
+highlighter: rouge
+
 header_pages:
   - index.md
   - about.md
+
+font-size: small
