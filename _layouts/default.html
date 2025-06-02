@@ -1,0 +1,21 @@
+<header>
+  <nav>
+    <a href="/">Ana Sayfa</a>
+    <a href="/hakkinda/">Hakkında</a>
+    <!-- diğer menü öğeleri -->
+    <button onclick="toggleDarkMode()">🌙 Karanlık Mod</button>
+  </nav>
+</header>
+
+<script>
+  // Dark mode toggle fonksiyonu
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+  }
+
+  // Sayfa yüklenirken localStorage'dan mod ayarı okunur
+  if (localStorage.getItem('darkMode') === 'true') {
+    document.body.classList.add('dark-mode');
+  }
+</script>
