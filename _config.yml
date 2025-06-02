@@ -2,7 +2,13 @@ title: Talha Yorulmaz
 description: Kişisel Jekyll sitesi
 theme: minima
 
-
 header_pages:
   - index.md
   - about.md
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
