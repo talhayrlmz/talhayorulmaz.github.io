@@ -4,8 +4,6 @@ theme: minima
 github_username: talhayrlmz
 url: "https://talhayorulmaz.com"
 
-sass:
-  style: compressed
 
 highlighter: rouge
 
