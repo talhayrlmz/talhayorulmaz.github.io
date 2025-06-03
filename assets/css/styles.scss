@@ -1,0 +1,43 @@
+/* Temel koyu tema */
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: "Fira Code", monospace;
+  margin: 0;
+  padding: 2rem;
+}
+
+a {
+  color: #00bcd4;
+  text-decoration: none;
+
+  &:hover {
+    color: #26dada;
+    text-decoration: underline;
+  }
+}
+
+header {
+  margin-bottom: 2rem;
+
+  h1 {
+    margin: 0;
+    color: #00ffc3;
+  }
+
+  nav a {
+    margin-right: 1rem;
+    color: #cccccc;
+  }
+
+  nav a:hover {
+    color: #ffffff;
+  }
+}
+
+footer {
+  margin-top: 4rem;
+  color: #777;
+  font-size: 0.9rem;
+}
