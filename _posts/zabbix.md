@@ -1,9 +1,8 @@
 ---
-layout: single
+layout: page
 title: "Zabbix Kurulumu"
-categories:
-  - Rehberler
-  - Zabbix
+permalink: /rehberler/zabbix-kurulumu/
 ---
+
 
 Zabbix kurulum adımları...
