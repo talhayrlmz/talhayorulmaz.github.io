@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Hakkımda
-permalink: /hakkimda/
+permalink: /about/
 ---
 
 Ben Talha Yorulmaz.  
