@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Zabbix Kurulumu"
-permalink: /rehberler/zabbix-kurulumu/
+permalink: /rehberler/zabbix/
 ---
 
 
