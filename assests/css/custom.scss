@@ -1,0 +1,43 @@
+// Tema renklerini özelleştirme
+:root {
+  --primary-color: #00bcd4;  // sitenin ana rengi (örn. butonlar, linkler)
+  --background-color: #0f111a; // koyu tema arka plan
+  --text-color: #e0e0e0;      // yazı rengi
+}
+
+// Gövde yazı tipi ve arka plan
+body {
+  font-family: 'Fira Code', monospace;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+// Başlıkları özelleştirme
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+// Navigasyon menüsü stilini değiştirme
+.nav__items {
+  background-color: #1c1f2e;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+// Link rengi ve efekti
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: lighten(var(--primary-color), 10%);
+  }
+}
+
+// Kod bloklarının görünümü
+.highlight, pre, code {
+  background-color: #1a1a1a;
+  color: #8aff80;
+  font-family: 'Fira Code', monospace;
+}
