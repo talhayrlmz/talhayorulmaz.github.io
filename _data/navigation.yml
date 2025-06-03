@@ -1,7 +1,0 @@
-main:
-  - title: "Ana Sayfa"
-    url: "/"
-  - title: "Hakkımda"
-    url: "/hakkimda/"
-  - title: "Rehberler"
-    url: "/rehberler/"
