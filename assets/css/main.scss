@@ -55,13 +55,34 @@ nav a:hover {
 }
 
 main {
-  background-color: var(--card-bg);
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  font-size: 1.2rem;
+  padding: 0;
   margin-bottom: 3rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   text-align: left;
+  max-width: 100%;
+}
+
+.card h2, .card h3 {
+  color: var(--accent-hover);
+  margin-bottom: 1rem;
+}
+
+.card p, .card li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.card ul {
+  padding-left: 1.2rem;
+  list-style-type: '➡ ';
 }
 
 footer {
@@ -70,39 +91,3 @@ footer {
   margin-top: 2rem;
 }
 
-h1, h2, h3 {
-  color: var(--accent-hover);
-  margin-top: 2rem;
-  border-bottom: 1px solid #2a2a2a;
-  padding-bottom: 0.5rem;
-}
-
-p {
-  line-height: 1.8;
-  margin: 1rem 0;
-}
-
-code, pre {
-  background: var(--code-bg);
-  padding: 0.3rem 0.5rem;
-  border-radius: 5px;
-  font-family: 'Fira Code', monospace;
-  color: #8aff80;
-  overflow-x: auto;
-}
-
-@media (max-width: 600px) {
-  .container {
-    padding: 1rem;
-  }
-
-  nav a {
-    display: block;
-    margin: 0.5rem auto;
-    width: 90%;
-  }
-
-  main {
-    font-size: 1rem;
-  }
-}
