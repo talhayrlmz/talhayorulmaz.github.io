@@ -4,3 +4,6 @@ baseurl: ""
 url: "https://talhayorulmaz.com"
 theme: null
 markdown: kramdown
+
+sass:
+  sass_dir: assets/css
