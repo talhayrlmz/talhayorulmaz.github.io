@@ -1,43 +1,46 @@
-/* Temel koyu tema */
-
 body {
   background-color: #121212;
   color: #e0e0e0;
   font-family: "Fira Code", monospace;
   margin: 0;
-  padding: 2rem;
+  padding: 0;
 }
 
-a {
-  color: #00bcd4;
-  text-decoration: none;
-
-  &:hover {
-    color: #26dada;
-    text-decoration: underline;
-  }
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
 header {
   margin-bottom: 2rem;
+}
 
-  h1 {
-    margin: 0;
-    color: #00ffc3;
-  }
+header h1 {
+  font-size: 2.5rem;
+  color: #00ffc3;
+  margin-bottom: 1rem;
+}
 
-  nav a {
-    margin-right: 1rem;
-    color: #cccccc;
-  }
+nav a {
+  color: #00bcd4;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-  nav a:hover {
-    color: #ffffff;
-  }
+nav a:hover {
+  color: #26dada;
+  text-decoration: underline;
+}
+
+main {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
 }
 
 footer {
-  margin-top: 4rem;
   color: #777;
   font-size: 0.9rem;
 }
