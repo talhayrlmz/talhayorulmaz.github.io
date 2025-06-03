@@ -43,8 +43,20 @@ header h1 {
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.1em;
-  animation: typing 2s steps(20, end), blink-caret 0.75s step-end infinite;
   width: 0;
+  animation: typing 2s steps(20, end) forwards, blink-caret 0.75s step-end 3;
+}
+
+/* Yazı yazma animasyonu */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* İmleç (cursor) animasyonu */
+@keyframes blink-caret {
+  0%, 100% { border-color: transparent }
+  50% { border-color: var(--accent) }
 }
 
 @keyframes typing {
