@@ -1,32 +1,127 @@
 ---
 ---
 
-.not-found {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --accent: #00bcd4;
+  --accent-hover: #26dada;
+  --card-bg: #1e1e1e;
+  --code-bg: #222;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
-  padding: 6rem 1rem;
-  color: #eee;
+}
 
-  h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+header {
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Yazı yazma efekti */
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.15em solid var(--accent);
+  white-space: nowrap;
+  animation:
+    typing-effect 2.5s steps(14, end) forwards,
+    blink-caret 0.75s step-end 3;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+/* Yazı yazma animasyonu */
+@keyframes typing-effect {
+  from { width: 0; }
+  to { width: 13ch; }
+}
+
+/* İmleç (cursor) animasyonu */
+@keyframes blink-caret {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: var(--accent); }
+}
+nav a {
+  background-color: var(--card-bg);
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+  display: inline-block;
+  color: var(--accent);
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #2e2e2e;
+  color: var(--accent-hover);
+}
+
+main {
+  padding: 0;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  text-align: left;
+  max-width: 100%;
+}
+
+.card h2, .card h3 {
+  color: var(--accent-hover);
+  margin-bottom: 1rem;
+}
+
+.card p, .card li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.card ul {
+  padding-left: 1.2rem;
+  list-style-type: '➡ ';
+}
+
+footer {
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 0.5rem auto;
+    width: 90%;
   }
 
-  p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-  }
-
-  .btn {
-    display: inline-block;
-    background: #fff;
-    color: #000;
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background 0.2s ease;
-
-    &:hover {
-      background: #ccc;
-    }
+  .card {
+    padding: 1rem;
   }
 }
