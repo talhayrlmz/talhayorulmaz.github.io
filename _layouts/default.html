@@ -4,17 +4,21 @@
   <meta charset="UTF-8">
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Derlenmiş SCSS dosyasını doğru şekilde bağla -->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
 <body>
   <div class="container">
     <header>
       <h1>Talha Yorulmaz</h1>
       <nav>
-        <a href="/">Ana Sayfa</a>
-        <a href="/hakkimda">Hakkımda</a>
-        <a href="/rehberler">Rehberler</a>
+        <a href="{{ '/' | relative_url }}">Ana Sayfa</a>
+        <a href="{{ '/hakkimda' | relative_url }}">Hakkımda</a>
+        <a href="{{ '/rehberler' | relative_url }}">Rehberler</a>
       </nav>
     </header>
 
