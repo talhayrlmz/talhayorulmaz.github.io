@@ -1,1 +1,6 @@
-
+title: Talha Yorulmaz
+description: Koyu temalı sade Jekyll sitesi
+baseurl: "" 
+url: "https://www.talhayorulmaz.com"
+theme: null
+markdown: kramdown
