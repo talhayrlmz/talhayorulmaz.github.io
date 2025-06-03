@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Zabbix Kurulumu"
+title: "Zabbix"
 permalink: /rehberler/zabbix/
 ---
 
