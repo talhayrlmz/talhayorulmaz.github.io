@@ -38,15 +38,14 @@ header h1 {
 
 /* Yazı yazma efekti */
 .typing {
+  width: 0ch;
   overflow: hidden;
-  border-right: 0.15em solid var(--accent);
   white-space: nowrap;
+  border-right: 0.15em solid var(--accent);
+  animation: typing 2s steps(14) forwards, blink-caret 0.75s step-end 4;
   margin: 0 auto;
   letter-spacing: 0.1em;
-  width: 0;
-  animation: typing 2s steps(15, end) forwards, blink-caret 0.75s step-end 3;
 }
-
 /* Yazı yazma animasyonu */
 @keyframes typing {
   from { width: 0 }
