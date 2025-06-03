@@ -1,3 +1,6 @@
+@import "minimal-mistakes/skins/dark"; // veya seçtiğin başka bir skin
+@import "minimal-mistakes"; // Temanın temel SCSS dosyası
+
 // Tema renklerini özelleştirme
 :root {
   --primary-color: #00bcd4;  // sitenin ana rengi (örn. butonlar, linkler)
