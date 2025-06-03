@@ -1,6 +1,6 @@
 title: Talha Yorulmaz
-description: Koyu temalı sade Jekyll sitesi
-baseurl: "" 
-url: "https://www.talhayorulmaz.com"
+description: Linux ve Açık Kaynak Rehberleri
+baseurl: ""
+url: "https://talhayorulmaz.com"
 theme: null
 markdown: kramdown
