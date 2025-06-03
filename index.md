@@ -1,6 +1,7 @@
 ---
-layout: home
-author_profile: true
+layout: default
+title: Ana Sayfa
 ---
 
-Merhaba, ben Talha Yorulmaz. Linux, sistem izleme ve açık kaynak projeler üzerine rehberler hazırlıyorum.
+Merhaba, ben Talha Yorulmaz.  
+Linux, açık kaynak ve sistem rehberleri üzerine içerikler üretiyorum.
