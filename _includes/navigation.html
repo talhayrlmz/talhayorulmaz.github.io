@@ -1,7 +1,8 @@
 <nav class="site-nav">
   <ul>
-    <li><a href="{{ '/' | relative_url }}">Ana Sayfa</a></li>
-    <li><a href="{{ '/about/' | relative_url }}">Hakkımda</a></li>
-    <li><a href="{{ '/rehberler/' | relative_url }}">Rehberler</a></li>
+    {% for item in site.data.navigation %}
+      <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+    {% endfor %}
   </ul>
 </nav>
+
