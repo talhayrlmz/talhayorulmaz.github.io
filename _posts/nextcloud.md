@@ -1,14 +1,13 @@
 ---
-layout: single
 title: "Nextcloud Kurulumu"
-categories: 
-  - Rehberler
-  - Nextcloud
+date: 2025-06-03
+categories: Rehberler
+tags: [nextcloud, linux, kurulum]
+layout: single
 ---
 
-Nextcloud kurulum adımları:
+Bu rehberde Nextcloud kurulumu adımlarını anlatacağım.
 
 1. Apache kurulumu
 2. PHP ayarları
 3. Nextcloud yapılandırması
-...
