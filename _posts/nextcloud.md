@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Nextcloud Kurulumu"
+title: "Nextcloud"
 permalink: /rehberler/nextcloud/
 ---
 
