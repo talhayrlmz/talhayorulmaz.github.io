@@ -37,27 +37,29 @@ header h1 {
 }
 
 /* Yazı yazma efekti */
-.typing {
-  width: 0ch;
+.typewriter {
+  display: inline-block;
   overflow: hidden;
-  white-space: nowrap;
   border-right: 0.15em solid var(--accent);
-  animation: typing 2s steps(14) forwards, blink-caret 0.75s step-end 4;
-  margin: 0 auto;
-  letter-spacing: 0.1em;
+  white-space: nowrap;
+  animation:
+    typing-effect 2.5s steps(14, end) forwards,
+    blink-caret 0.75s step-end 3;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
 }
 /* Yazı yazma animasyonu */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+@keyframes typing-effect {
+  from { width: 0; }
+  to { width: 13ch; }
 }
 
 /* İmleç (cursor) animasyonu */
 @keyframes blink-caret {
-  0%, 100% { border-color: transparent }
-  50% { border-color: var(--accent) }
+  0%, 100% { border-color: transparent; }
+  50% { border-color: var(--accent); }
 }
-
 nav a {
   background-color: var(--card-bg);
   padding: 0.5rem 1rem;
