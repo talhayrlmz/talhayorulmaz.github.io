@@ -1,1 +1,1 @@
-# talhayorulmaz.github.io
+# talhayorulmaz.com
