@@ -1,0 +1,12 @@
+- title: "Güvenlik Tarama Aracı"
+  description: "Açık port ve zafiyet taraması yapan bir Python aracı."
+  url: "https://github.com/talha/güvenlik-tarama"
+
+- title: "Blog Motoru"
+  description: "Jekyll tabanlı kişisel bir blog sistemi."
+  url: "https://talha.github.io"
+
+- title: "Stok Takip Uygulaması"
+  description: "PHP & Laravel kullanılarak hazırlanmış stok takibi sistemi."
+  url: "https://github.com/talha/stok-takip"
+

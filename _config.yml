@@ -1,0 +1,13 @@
+title: "Talha Yorulmaz"
+description: "Talha Yorulmaz Resmi Web Sitesi."
+url: "https://talhayorulmazgithbu.io"
+
+author: "Talha Yorulmaz"
+
+# Build Ayarları
+theme: minima # Eğer kendi temanı kullanıyorsan bu bile olmayabilir
+plugins:
+  - jekyll-seo-tag
+
+# Markdown Ayarları
+markdown: kramdown

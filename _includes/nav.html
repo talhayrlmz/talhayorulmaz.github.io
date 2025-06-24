@@ -1,0 +1,25 @@
+<nav class="menu">
+  <div class="logo">
+    <a href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Site Logosu">
+    </a>
+  </div>
+  <div class="menu-icon" id="menu-toggle">☰</div>
+  <div class="menu-links" id="menu-links">
+    {% for item in site.data.menu %}
+      <a href="{{ item.url | relative_url }}">
+        {{ item.title }}
+      </a>
+    {% endfor %}
+  </div>
+</nav>
+
+<!-- Menü JS -->
+<script>
+  const menuIcon = document.getElementById('menu-toggle');
+  const menuLinks = document.getElementById('menu-links');
+
+  menuIcon.addEventListener('click', () => {
+    menuLinks.classList.toggle('active');
+  });
+</script>
