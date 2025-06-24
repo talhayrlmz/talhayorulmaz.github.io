@@ -1,7 +1,36 @@
 ---
 layout: default
-title: "Anasayfa"
-description: "Talha Yorulmaz resmi web sitesine hoş geldin."
+title: "Hoş Geldin"
+description: "Talha Yorulmaz Kişisel Web Sitesi"
 ---
-<h1>Hoş Geldin!</h1>
-<p>Burada projelerim, yazılarım ve diğer bilgiler yer alacak.</p>
+<!-- Kahraman Alanı -->
+<section class="hero">
+  <div class="content">
+    <h1>Hoş Geldin!</h1>
+    <p>Ben Talha Yorulmaz, bir geliştirici ve teknoloji meraklısıyım.<br/>
+       Projelerime, yazılarıma ve hakkımda bilgilere buradan ulaşabilirsin!</p>
+    <a href="{{ '/projects' | relative_url }}" class="btn">Projelerimi Gör</a>
+  </div>
+</section>
+
+<!-- Son Projeler Alanı -->
+<section class="projects">
+  <h2>Son Projelerim</h2>
+  <div class="project-list">
+    {% for project in site.data.projects limit:3 %}
+    <div class="project-item">
+      <h3><a href="{{ project.url }}" target="_blank">{{ project.title }}</a></h3>
+      <p>{{ project.description }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Hakkında Alanı -->
+<section class="about">
+  <h2>Hakkımda</h2>
+  <p>Bir geliştirici olarak hedefim, iyi tasarımlı ve iyi kodlanmış projeler üretmek.
+    Siber güvenlikten web geliştirmeye kadar birçok alanda kendimi geliştiriyorum.
+  </p>
+  <a href="{{ '/about' | relative_url }}" class="btn">Detaylar</a>
+</section>
