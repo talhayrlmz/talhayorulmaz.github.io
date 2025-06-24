@@ -1,4 +1,6 @@
-/* Genel Ayarlar */
+/* ==================================================
+   Genel Ayarlar
+================================================== */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -8,7 +10,9 @@ body {
   min-height: 100vh;
 }
 
-/* Menü Alanı */
+/* ==================================================
+   Menü Alanı
+================================================== */
 .menu {
   position: relative;
   display: flex;
@@ -39,7 +43,6 @@ body {
   display: none;
   flex-direction: column;
 }
-
 .menu-links a {
   color: #fff;
   text-decoration: none;
@@ -48,12 +51,13 @@ body {
 .menu-links a:hover {
   color: #f9ca24;
 }
-
 .menu-links.active {
   display: flex;
 }
 
-/* Navbar */
+/* ==================================================
+   Navbar
+================================================== */
 nav {
   background-color: #222;
   padding: 1rem;
@@ -68,14 +72,18 @@ nav a:hover {
   color: #f9ca24;
 }
 
-/* Main Alanı */
+/* ==================================================
+   Main Alanı
+================================================== */
 main {
   max-width: 1000px;
   margin: auto;
   padding: 2rem;
 }
 
-/* Footer */
+/* ==================================================
+   Footer
+================================================== */
 footer {
   background-color: #222;
   color: #fff;
@@ -84,16 +92,85 @@ footer {
   margin-top: auto;
 }
 
-/* Genel Tipografi */
+/* ==================================================
+   Genel Tipografi
+================================================== */
 h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 h2 {
   font-size: 1.5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 p {
   font-size: 1rem;
   line-height: 1.5;
+}
+
+/* ==================================================
+   Anasayfa Alanı
+================================================== */
+.hero {
+  background: #f5f5f5;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero p {
+  font-size: 1.25rem;
+}
+.hero .btn {
+  display: inline-block;
+  padding: .75rem 1.25rem;
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* ==================================================
+   Projeler Alanı
+================================================== */
+.projects {
+  padding: 2rem 1rem;
+}
+.project-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.project-item {
+  flex: 1 1 30%;
+  background: #fff;
+  padding: 1rem;
+  margin: .5rem;
+  border-radius: 4px;
+}
+.project-item h3 {
+  font-size: 1.25rem;
+}
+.project-item p {
+  font-size: .95rem;
+}
+
+/* ==================================================
+   Hakkında Alanı
+================================================== */
+.about {
+  padding: 2rem 1rem;
+  background: #fafafa;
+}
+.about p {
+  font-size: 1rem;
+}
+.about .btn {
+  display: inline-block;
+  padding: .5rem 1rem;
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
 }
