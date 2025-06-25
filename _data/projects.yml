@@ -2,11 +2,14 @@
   description: "Açık kaynak kodlu sistem ve servisleri izleme çözümü"
   url: "https://talhayorulmaz.com/404"
 
+- title: "Glpi destek merkezi"
+  description: "Açık kaynak kodlu BT destek merkezi çözümü"
+  url: "https://talhayorulmaz.com/404"
+  
+- title: "Nextcloud"
+  description: "Açık kaynak kodlu dosya barındırma/depolama servisi"
+  url: "https://talhayorulmaz.com/404"
+
 - title: "Blog Motoru"
   description: "Jekyll tabanlı kişisel bir blog sistemi."
   url: "https://github.com/talhayrlmz/talhayorulmaz.github.io"
-
-- title: "Stok Takip Uygulaması"
-  description: "PHP & Laravel kullanılarak hazırlanmış stok takibi sistemi."
-  url: "https://talhayorulmaz.com/404"
-
