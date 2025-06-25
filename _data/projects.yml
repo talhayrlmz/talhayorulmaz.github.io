@@ -1,6 +1,6 @@
 - title: "Güvenlik Tarama Aracı"
   description: "Açık port ve zafiyet taraması yapan bir Python aracı."
-  url: "/404"
+  url: "https://talhayorulmaz.com/404"
 
 - title: "Blog Motoru"
   description: "Jekyll tabanlı kişisel bir blog sistemi."
@@ -8,5 +8,5 @@
 
 - title: "Stok Takip Uygulaması"
   description: "PHP & Laravel kullanılarak hazırlanmış stok takibi sistemi."
-  url: "/404"
+  url: "https://talhayorulmaz.com/404"
 
