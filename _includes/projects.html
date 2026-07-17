@@ -1,0 +1,23 @@
+<div class="projects-grid">
+  {% for project in site.data.projects %}
+  <div class="project-card">
+    <div class="project-header">
+      <span class="project-cat">{{ project.category }}</span>
+      <span class="project-arrow">↗</span>
+    </div>
+    <div class="project-body">
+      <div class="project-title">{{ project.title }}</div>
+      <div class="project-desc">{{ project.description }}</div>
+      <div class="project-tags">
+        {% for tag in project.tags %}
+        <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="project-footer">
+      {% if project.github %}<a href="{{ project.github }}" class="project-link" target="_blank">GitHub →</a>{% endif %}
+      {% if project.demo %}<a href="{{ project.demo }}" class="project-link" target="_blank">Demo →</a>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
