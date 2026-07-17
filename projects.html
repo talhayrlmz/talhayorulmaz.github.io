@@ -1,45 +1,18 @@
 ---
 layout: default
-title: "Projeler"
-description: "Talha Yorulmaz tarafından geliştirilen Linux, açık kaynak ve sistem yönetimi projeleri."
+title: Projects
 ---
 
-<section class="page-hero">
-  <div class="container narrow">
-    <p class="eyebrow">PROJELER</p>
-    <h1>Öğrenirken geliştirdiğim çalışmalar.</h1>
-    <p>
-      Açık kaynak, sistem yönetimi ve web teknolojileri etrafında oluşturduğum projeler.
-    </p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="project-grid project-grid-full">
-      {% for project in site.data.projects %}
-        <article class="project-card">
-          <div class="project-card-top">
-            <span class="project-category">{{ project.category }}</span>
-            <a
-              class="project-arrow"
-              href="{{ project.url }}"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="{{ project.title }} projesini aç"
-            >↗</a>
-          </div>
-
-          <h2>{{ project.title }}</h2>
-          <p>{{ project.description }}</p>
-
-          <div class="tag-list">
-            {% for tag in project.tags %}
-              <span>{{ tag }}</span>
-            {% endfor %}
-          </div>
-        </article>
-      {% endfor %}
+<div class="section-wrap" style="min-height:100vh;padding-top:100px">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">// PROJECTS</span>
+      <div class="section-line"></div>
     </div>
+    <h2 class="section-title">Tüm Projeler</h2>
+    <p style="color:var(--muted);margin-bottom:40px;font-size:15px">
+      Açık kaynak araçlarla inşa ettiğim altyapı ve güvenlik projeleri.
+    </p>
+    {% include projects.html %}
   </div>
-</section>
+</div>
