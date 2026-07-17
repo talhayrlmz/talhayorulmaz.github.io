@@ -1,0 +1,50 @@
+---
+layout: default
+---
+{% include hero.html %}
+
+<div class="section-wrap alt">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">// 01 SKILLS</span>
+      <div class="section-line"></div>
+    </div>
+    <h2 class="section-title">Uzmanlık Alanları</h2>
+    {% include skills.html %}
+  </div>
+</div>
+
+<div class="section-wrap">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">// 02 PROJECTS</span>
+      <div class="section-line"></div>
+    </div>
+    <h2 class="section-title">Öne Çıkan Projeler</h2>
+    {% include projects.html %}
+  </div>
+</div>
+
+<div class="section-wrap alt">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">// 03 LATEST POSTS</span>
+      <div class="section-line"></div>
+    </div>
+    <h2 class="section-title">Son Yazılar</h2>
+    <div class="posts-list">
+      {% for post in site.posts limit:3 %}
+      <a href="{{ post.url | relative_url }}" class="post-card">
+        <div>
+          <div class="post-meta">{{ post.date | date: "%d %B %Y" }} · {{ post.categories | join: " · " }}</div>
+          <div class="post-title">{{ post.title }}</div>
+          <div class="post-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</div>
+        </div>
+        <span class="post-arrow">↗</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% include contact.html %}
