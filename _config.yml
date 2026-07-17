@@ -5,10 +5,10 @@ email: talhayrlmz@gmail.com
 
 author: "Talha Yorulmaz"
 
-# Build Ayarları
-theme: minima # Eğer kendi temanı kullanıyorsan bu bile olmayabilir
+
+theme: minima 
 plugins:
   - jekyll-seo-tag
 
-# Markdown Ayarları
+
 markdown: kramdown
