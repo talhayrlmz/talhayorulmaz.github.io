@@ -1,11 +1,17 @@
-<nav class="menu-links" id="menu-links">
-  <a href="{{ '/' | relative_url }}">Anasayfa</a>
-  <a href="{{ '/about' | relative_url }}">Hakkında</a>
-  <a href="{{ '/projects' | relative_url }}">Projeler</a>
-  <a href="{{ '/iletisim' | relative_url }}">İletişim</a>
+<nav class="site-nav" aria-label="Ana menü">
+  <div class="container">
+    <ul>
+      {% for item in site.data.menu %}
+        {% assign item_url = item.url | relative_url %}
+        <li>
+          <a
+            href="{{ item_url }}"
+            {% if page.url == item.url or page.url == item.url | append: '.html' %}aria-current="page"{% endif %}
+          >
+            {{ item.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </nav>
-<script>
-  const icon = document.getElementById('menu-icon');
-  const links = document.getElementById('menu-links');
-  icon.addEventListener('click', () => links.classList.toggle('active'));
-</script>
