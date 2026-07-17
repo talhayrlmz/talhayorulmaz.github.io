@@ -1,0 +1,45 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="section-wrap" style="min-height:100vh;padding-top:100px">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">// BLOG</span>
+      <div class="section-line"></div>
+    </div>
+    <h2 class="section-title">Teknik Yazılar</h2>
+    <p style="color:var(--muted);margin-bottom:40px;font-size:15px">
+      Linux, siber güvenlik ve açık kaynak üzerine notlar.
+    </p>
+
+    {% if site.posts.size > 0 %}
+    <div class="posts-list">
+      {% for post in site.posts %}
+      <a href="{{ post.url | relative_url }}" class="post-card">
+        <div>
+          <div class="post-meta">
+            {{ post.date | date: "%d %B %Y" }}
+            {% if post.categories %} · {{ post.categories | join: " · " }}{% endif %}
+          </div>
+          <div class="post-title">{{ post.title }}</div>
+          <div class="post-excerpt">{{ post.excerpt | strip_html | truncate: 150 }}</div>
+          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+            {% for tag in post.tags %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
+        <span class="post-arrow">↗</span>
+      </a>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div style="text-align:center;padding:80px 0;color:var(--muted)">
+      <div style="font-size:48px;margin-bottom:16px">📝</div>
+      <p style="font-size:16px">Henüz yazı yok. Yakında gelecek!</p>
+    </div>
+    {% endif %}
+  </div>
+</div>
