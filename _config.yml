@@ -1,14 +1,29 @@
-title: "Talha Yorulmaz"
-description: "Talha Yorulmaz Resmi Web Sitesi."
-url: "https://talhayorulmaz.com"
-email: talhayrlmz@gmail.com
+title: Talha Yorulmaz
+description: Linux sistem yöneticisi ve siber güvenlik meraklısı.
+url: "https://talhayrlmz.github.io"
+baseurl: ""
+author:
+  name: Talha Yorulmaz
+  email: your@email.com
+  github: talhayrlmz
+  linkedin: talhayorulmaz
+  twitter: talhayrlmz
 
-author: "Talha Yorulmaz"
-
-
-theme: minima 
 plugins:
+  - jekyll-feed
   - jekyll-seo-tag
 
-
 markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+collections:
+  projects:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
