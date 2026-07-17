@@ -4,10 +4,12 @@
   {% include head.html %}
 </head>
 <body>
+  <a class="skip-link" href="#main-content">İçeriğe geç</a>
+
   {% include header.html %}
   {% include nav.html %}
 
-  <main>
+  <main id="main-content">
     {{ content }}
   </main>
 
