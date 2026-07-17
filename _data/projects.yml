@@ -1,15 +1,35 @@
-- title: "Zabbix ve Grafana kurulumu"
-  description: "Açık kaynak kodlu sistem ve servisleri izleme çözümü"
+- title: "Zabbix ve Grafana Kurulumu"
+  description: "Açık kaynak araçlarla sistem, servis ve altyapı izleme için hazırlanan monitoring çözümü."
+  category: "Monitoring"
+  tags:
+    - Zabbix
+    - Grafana
+    - Linux
   url: "https://talhayorulmaz.com/404"
 
-- title: "Glpi destek merkezi"
-  description: "Açık kaynak kodlu BT destek merkezi çözümü"
+- title: "GLPI Destek Merkezi"
+  description: "BT varlık yönetimi, talep takibi ve teknik destek süreçleri için açık kaynak servis masası çözümü."
+  category: "ITSM"
+  tags:
+    - GLPI
+    - ITSM
+    - Help Desk
   url: "https://talhayorulmaz.com/404"
-  
+
 - title: "Nextcloud"
-  description: "Açık kaynak kodlu dosya barındırma/depolama servisi"
+  description: "Dosya paylaşımı, depolama ve ekip içi iş birliği için kendi sunucunda çalışan açık kaynak platform."
+  category: "Self-hosted"
+  tags:
+    - Nextcloud
+    - Docker
+    - Storage
   url: "https://talhayorulmaz.com/404"
 
-- title: "Blog Motoru"
-  description: "Jekyll tabanlı kişisel bir blog sistemi."
+- title: "Kişisel Blog Motoru"
+  description: "Jekyll ile geliştirilen, hızlı ve sade kişisel portföy/blog altyapısı."
+  category: "Web"
+  tags:
+    - Jekyll
+    - HTML
+    - CSS
   url: "https://github.com/talhayrlmz/talhayorulmaz.github.io"
