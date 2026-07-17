@@ -1,40 +1,15 @@
 ---
 layout: default
-title: "404 - Sayfa Bulunamadı"
-description: "Talha Yorulmaz - 404 Hata Sayfası"
+title: "Sayfa bulunamadı"
+description: "Aradığınız sayfa bulunamadı."
+permalink: /404.html
 ---
 
-<section class="error">
-  <h1>404</h1>
-  <h2>Aradığınız sayfa bulunamadı</h2>
-  <p>Üzgünüm, bu sayfa mevcut değil veya yanlış bir bağlantıdan yönlendirilmiş olabilir.</p>
-  <a class="btn" href="{{ '/' | relative_url }}">Anasayfaya Dön</a>
+<section class="not-found">
+  <div class="container narrow">
+    <p class="eyebrow">HATA 404</p>
+    <h1>Bu sayfa bulunamadı.</h1>
+    <p>Aradığın bağlantı taşınmış, silinmiş veya hiç var olmamış olabilir.</p>
+    <a class="button button-primary" href="{{ '/' | relative_url }}">Ana sayfaya dön <span>→</span></a>
+  </div>
 </section>
-
-<style>
-.error {
-  text-align: center;
-  padding: 3rem 1rem;
-}
-.error h1 {
-  font-size: 5rem;
-  color: #ff7f50;
-}
-.error h2 {
-  font-size: 1.5rem;
-}
-.error p {
-  font-size: 1rem;
-  margin: 1rem 0;
-}
-.error .btn {
-  padding: .5rem 1rem;
-  background: #007BFF;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-}
-.error .btn:hover {
-  background: #0056b3;
-}
-</style>
