@@ -1,35 +1,20 @@
-- title: "Zabbix ve Grafana Kurulumu"
-  description: "Açık kaynak araçlarla sistem, servis ve altyapı izleme için hazırlanan monitoring çözümü."
-  category: "Monitoring"
-  tags:
-    - Zabbix
-    - Grafana
-    - Linux
-  url: "https://talhayorulmaz.com/404"
+- title: "Zabbix & Grafana Stack"
+  category: "MONITORING"
+  description: "Kurumsal düzeyde altyapı izleme sistemi. Zabbix ile metrik toplama, Grafana ile görselleştirme ve otomatik uyarı mekanizmaları."
+  tags: [Zabbix, Grafana, Linux, SNMP]
+  github: "https://github.com/talhayrlmz"
+  demo: ""
 
-- title: "GLPI Destek Merkezi"
-  description: "BT varlık yönetimi, talep takibi ve teknik destek süreçleri için açık kaynak servis masası çözümü."
+- title: "GLPI Help Desk"
   category: "ITSM"
-  tags:
-    - GLPI
-    - ITSM
-    - Help Desk
-  url: "https://talhayorulmaz.com/404"
+  description: "Açık kaynak IT servis yönetim platformu kurulumu ve özelleştirmesi. Varlık yönetimi, ticket sistemi ve raporlama entegrasyonu."
+  tags: [GLPI, ITSM, PHP, MySQL]
+  github: "https://github.com/talhayrlmz"
+  demo: ""
 
-- title: "Nextcloud"
-  description: "Dosya paylaşımı, depolama ve ekip içi iş birliği için kendi sunucunda çalışan açık kaynak platform."
-  category: "Self-hosted"
-  tags:
-    - Nextcloud
-    - Docker
-    - Storage
-  url: "https://talhayorulmaz.com/404"
-
-- title: "Kişisel Blog Motoru"
-  description: "Jekyll ile geliştirilen, hızlı ve sade kişisel portföy/blog altyapısı."
-  category: "Web"
-  tags:
-    - Jekyll
-    - HTML
-    - CSS
-  url: "https://github.com/talhayrlmz/talhayorulmaz.github.io"
+- title: "Nextcloud Private Cloud"
+  category: "SELF-HOSTED"
+  description: "Kendi sunucunda özel bulut depolama çözümü. Docker Compose ile dağıtım, SSL sertifikası ve yedekleme otomasyonu."
+  tags: [Nextcloud, Docker, Nginx, SSL]
+  github: "https://github.com/talhayrlmz"
+  demo: ""
