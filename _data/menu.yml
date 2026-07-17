@@ -1,8 +1,11 @@
-- title: "Anasayfa"
+- title: "Ana Sayfa"
   url: /
-- title: "Hakkında"
+
+- title: "Hakkımda"
   url: /about
-- title: "İletişim"
-  url: /iletisim
+
 - title: "Projeler"
   url: /projects
+
+- title: "İletişim"
+  url: /iletisim
